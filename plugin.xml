@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-get-referrer" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-plugin-get-referrer</name>
+  <engines>
+    <engine name="cordova" version=">=5.0.0" />
+  </engines>
+  <platform name="android">
+    <source-file src="src/android/Receiver.java" target-dir="src/com/roostermoney/getreferrer/" />
+	  <config-file target="AndroidManifest.xml" parent="/manifest/application">
+		  <receiver android:exported="true" android:name="com.roostermoney.getreferrer.Receiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </config-file>
+  </platform>
+  
+</plugin>

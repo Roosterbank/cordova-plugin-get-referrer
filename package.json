@@ -7,16 +7,12 @@
       "android"
     ]
   },
-  "keywords": [
-    "ecosystem:cordova",
-    "cordova-android"
-  ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">=5.0.0"
-    },
-  ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roosterbank/cordova-plugin-get-referrer.git"
+  },
+  "author": {
+    "name": "dev@roostermoney.com"
+  },
   "license": "ISC"
 }
